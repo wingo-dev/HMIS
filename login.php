@@ -1,9 +1,23 @@
 <?php
 include "./include/header.php";
+if(isset($_POST['email'])){
+    $query = "SELECT * FROM users WHERE email = '".$_POST['email']."' ";
+    $result = mysqli_query($conn->connect(), $query);
+    if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_array($result)){
+            $_SESSION['user_info'] = $row;
+        }
+    }
+    if($_SESSION['user_info']['email'] == $_POST['email'] && $_SESSION['user_info']['password'] == md5($_POST['password'])){
+        header("location:./dashboard/index.php");
+        unset($_SESSION['error']);
+    }else{
+        $_SESSION['error'] = "Login credential did not match.";
+    }
+}
 ?>
 <!-- HK Wrapper -->
 	<div class="hk-wrapper">
-
         <!-- Main Content -->
         <div class="hk-pg-wrapper hk-auth-wrapper">
             <header class="d-flex justify-content-between align-items-center">
@@ -38,14 +52,21 @@ include "./include/header.php";
                     <div class="col-xl-7 pa-0">
                         <div class="auth-form-wrap py-xl-0 py-50">
                             <div class="auth-form w-xxl-55 w-xl-75 w-sm-90 w-xs-100">
-                                <form>
-                                    <p class="mb-30">Sign in to your account and enjoy unlimited perks.</p>
+                                <form method="post">
+                                    <?php if (isset($_SESSION['error'])){ ?>
+                                    <div class="alert alert-inv alert-inv-danger alert-wth-icon alert-dismissible fade show" role="alert">
+                                        <span class="alert-icon-wrap"><i class="zmdi zmdi-bug"></i></span> <?php echo $_SESSION['error']?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <?php }?>
                                     <div class="form-group">
-                                        <input class="form-control" placeholder="Email" type="email">
+                                        <input class="form-control" name="email" placeholder="Email" type="email">
                                     </div>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <input class="form-control" placeholder="Password" type="password">
+                                            <input class="form-control" name="password" placeholder="Password" type="password">
                                             <div class="input-group-append">
                                                 <span class="input-group-text"><span class="feather-icon"><i data-feather="eye-off"></i></span></span>
                                             </div>

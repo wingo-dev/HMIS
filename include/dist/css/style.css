@@ -13583,7 +13583,7 @@ button.close {
 
 .hk-pg-wrapper {
   background: #f5f5f6;
-  padding: 57px 50px 60px;
+  padding: 80px 50px 60px;
   position: relative; }
   .hk-pg-wrapper .hk-pg-header {
     display: -webkit-box;
@@ -14414,7 +14414,7 @@ Project:	Deepor
   transition: all 0.4s ease; }
 .hk-wrapper.hk-vertical-nav .hk-nav {
   position: fixed;
-  top: 57px;
+  top: 80px;
   left: 0;
   width: 240px;
   margin-left: 0;
@@ -14480,11 +14480,11 @@ Project:	Deepor
       font-size: 16px;
       text-rendering: auto;
       margin-left: auto;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
       -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
       transition: all 0.4s ease; }
