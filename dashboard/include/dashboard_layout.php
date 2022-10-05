@@ -58,19 +58,83 @@ if (!isset($_SESSION['user_info'])){
         <div class="nicescroll-bar">
             <div class="navbar-nav-wrap">
                 <ul class="navbar-nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php" >
-                            <i class="ion ion-ios-keypad"></i>
-                            <span class="nav-link-text">All Users</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="add_user.php">
-                            <i class="ion ion-ios-keypad"></i>
-                            <span class="nav-link-text">Register User</span>
-                        </a>
-                    </li>
-
+                    <?php
+//                    admin part
+                    if ($_SESSION['user_info']['role'] == 0){?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php" >
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">All Users</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add_user.php">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Register User</span>
+                            </a>
+                        </li>
+                    <?php }
+//                    doctor part
+                    if ($_SESSION['user_info']['role'] == 1){?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Add Diagnosis Report</span>
+                            </a>
+                        </li>
+                    <?php }
+//                    front desk
+                    if ($_SESSION['user_info']['role'] == 2){
+                    ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Assign Bed</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Add Appointment</span>
+                            </a>
+                        </li>
+                    <?php }
+//                    nurse
+                    if ($_SESSION['user_info']['role'] == 3){
+                    ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Prescription</span>
+                            </a>
+                        </li>
+                    <?php }
+//                    pharmacist
+                    if ($_SESSION['user_info']['role'] == 4){
+                    ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Read Prescription</span>
+                            </a>
+                        </li>
+                    <?php }
+//                    patient
+                    if ($_SESSION['user_info']['role'] == 5){
+                    ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Register Patient</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Add Appointment</span>
+                            </a>
+                        </li>
+                    <?php }?>
                 </ul>
             </div>
         </div>
@@ -85,26 +149,6 @@ if (!isset($_SESSION['user_info'])){
                 <div class="settings-panel-head mb-15">
                     <a href="javascript:void(0);" id="settings_panel_close" class="settings-panel-close"><span class="feather-icon"><i data-feather="x"></i></span></a>
                 </div>
-
-                <h6 class="mb-5">Layout</h6>
-                <p class="font-14">Choose your preferred layout</p>
-                <div class="layout-img-wrap">
-                    <div class="row">
-                        <a href="javascript:void(0);" class="col-6 mb-30 active">
-                            <img class="rounded opacity-70" src="<?php echo RELATIVE_PATH;?>/dist/img/layout1.png" alt="layout">
-                            <i class="zmdi zmdi-check"></i>
-                        </a>
-                        <a href="dashboard2.html" class="col-6 mb-30">
-                            <img class="rounded opacity-70" src="<?php echo RELATIVE_PATH;?>/dist/img/layout2.png" alt="layout">
-                            <i class="zmdi zmdi-check"></i>
-                        </a>
-                        <a href="dashboard3.html" class="col-6">
-                            <img class="rounded opacity-70" src="<?php echo RELATIVE_PATH;?>/dist/img/layout3.png" alt="layout">
-                            <i class="zmdi zmdi-check"></i>
-                        </a>
-                    </div>
-                </div>
-                <hr>
                 <h6 class="mb-5">Navigation</h6>
                 <p class="font-14">Menu comes in two modes: dark & light</p>
                 <div class="button-list hk-nav-select mb-10">

@@ -27,6 +27,8 @@
 
     <!-- Custom CSS -->
     <link href="<?php echo RELATIVE_PATH.'/dist/css/style.css'?>" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>

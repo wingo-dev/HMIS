@@ -81,11 +81,11 @@ $result = mysqli_query($conn->connect(), $query);
                                                                 }?>
                                                             </td>
                                                             <td>
-                                                                <a href="#" class="mr-25" data-toggle="tooltip"
-                                                                   data-original-title="Edit"> <i
+                                                                <a href="#" onclick="getId(<?php echo $rows['id']?>);" class="mr-25"
+                                                                   data-original-title="Edit" data-id = "<?php echo $rows['id'];?>" data-toggle="modal" data-target="#exampleModalLarge01"> <i
                                                                         class="icon-pencil"></i> </a>
                                                                 <a href="#" data-toggle="tooltip"
-                                                                   data-original-title="Close"> <i
+                                                                   data-original-title="Delete"> <i
                                                                         class="icon-trash txt-danger"></i> </a>
                                                             </td>
                                                         </tr>
@@ -104,10 +104,80 @@ $result = mysqli_query($conn->connect(), $query);
 
             </div>
             <!-- /Container -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLarge01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLarge01" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Update User Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" action="update_user.php">
+                            <div class="row form-group">
+                                <div class="col-6">
+                                    <label class="control-label mb-10" for="exampleInputuname_1">User Name</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="icon-user"></i></span>
+                                        </div>
+                                        <input type="text" name="username" class="form-control" id="exampleInputuname_1" placeholder="Username" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label class="control-label mb-10" for="exampleInputEmail_1">Email address</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="icon-envelope-open"></i></span>
+                                        </div>
+                                        <input type="email" name="email" class="form-control" id="exampleInputEmail_1" placeholder="Enter email" required>
+                                    </div>
 
-
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-6">
+                                    <label class="control-label mb-10" for="exampleInputEmail_1">Role</label>
+                                    <select class="form-control custom-select" name="role" required>
+                                        <option ></option>
+                                        <option value="1">Doctor</option>
+                                        <option value="2">Front Desk</option>
+                                        <option value="3">Nurse</option>
+                                        <option value="4">Pharmacist</option>
+                                        <option value="5">Patient</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label class="control-label mb-10" for="exampleInputpwd_1">Password</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="icon-lock"></i></span>
+                                        </div>
+                                        <input type="password" name="password" class="form-control" id="exampleInputpwd_1" placeholder="Enter password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
     </div>
 <!-- /Main Content -->
 </div>
+<script>
+    function getId(id) {
+        return id;
+    }
+    $(document).ready(function() {
+
+    });
+</script>
 <?php
 include  "../include/footer.php";

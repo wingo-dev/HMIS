@@ -9,7 +9,7 @@ if(isset($_POST['email'])){
         }
     }
     if($_SESSION['user_info']['email'] == $_POST['email'] && $_SESSION['user_info']['password'] == md5($_POST['password'])){
-        header("location:./dashboard/index.php");
+            header("location:./dashboard/index.php");
         unset($_SESSION['error']);
     }else{
         $_SESSION['error'] = "Login credential did not match.";
