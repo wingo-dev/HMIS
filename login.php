@@ -8,8 +8,26 @@ if(isset($_POST['email'])){
             $_SESSION['user_info'] = $row;
         }
     }
+
     if($_SESSION['user_info']['email'] == $_POST['email'] && $_SESSION['user_info']['password'] == md5($_POST['password'])){
-            header("location:./dashboard/index.php");
+        if ($_SESSION['user_info']['role'] == 0){
+            header("location:./dashboard/admin/index.php");
+        }
+        if ($_SESSION['user_info']['role'] == 1){
+            header("location:./dashboard/doctor/index.php");
+        }
+        if ($_SESSION['user_info']['role'] == 2){
+            header("location:./dashboard/frontdesk/index.php");
+        }
+        if ($_SESSION['user_info']['role'] == 3){
+            header("location:./dashboard/nurse/index.php");
+        }
+        if ($_SESSION['user_info']['role'] == 4){
+            header("location:./dashboard/pharmacist/index.php");
+        }
+        if ($_SESSION['user_info']['role'] == 5){
+            header("location:./dashboard/patient/index.php");
+        }
         unset($_SESSION['error']);
     }else{
         $_SESSION['error'] = "Login credential did not match.";

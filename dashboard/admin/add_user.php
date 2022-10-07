@@ -1,5 +1,5 @@
 <?php
-include "./include/dashboard_layout.php";
+include "../include/dashboard_layout.php";
 if (isset($_POST['register'])){
     if (empty($_POST["username"]) && empty($_POST['email'])){
         echo  "All fields are required";
@@ -90,4 +90,4 @@ if (isset($_POST['register'])){
     </div>
 </div>
 <?php
-include "../include/footer.php";
+include "../../include/footer.php";

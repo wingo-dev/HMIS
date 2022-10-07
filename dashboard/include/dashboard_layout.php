@@ -1,8 +1,8 @@
 <?php
-include "../include/header.php";
+include "../../include/header.php";
 
 if (!isset($_SESSION['user_info'])){
-    header("location:../login.php");
+    header("location:../../login.php");
 }
 ?>
 <!-- HK Wrapper -->
@@ -45,7 +45,7 @@ if (!isset($_SESSION['user_info'])){
                         </div>
                     </div>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./logout.php"><i class="dropdown-icon zmdi zmdi-power"></i><span>Log out</span></a>
+                    <a class="dropdown-item" href="../logout.php"><i class="dropdown-icon zmdi zmdi-power"></i><span>Log out</span></a>
                 </div>
             </li>
         </ul>

@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f05dba6-d4c2-4430-a390-50061cdd71ee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dashboard/update_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin/update_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin/user_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/doctor/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/frontdesk/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/nurse/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/patient/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/pharmacist/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/admin/add_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/include/dashboard_layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/include/dashboard_layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/update_user.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,20 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dashboard_layout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/include/dashboard_layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="368">
+              <caret line="70" column="54" lean-forward="true" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#!!top" />
               </folding>
@@ -40,19 +41,10 @@
         </entry>
       </file>
       <file leaf-file-name="add_user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/add_user.php">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/add_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="78" column="69" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="372">
+              <caret line="92" column="15" selection-start-line="92" selection-start-column="15" selection-end-line="92" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -60,31 +52,74 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="299">
+              <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dashboard/index.php">
+      <file leaf-file-name="update_user.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/update_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
+            <state relative-caret-position="92">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1132">
+              <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
               <folding>
-                <element signature="e#2830#5031#0#HTML" />
-                <element signature="e#6703#10776#0#HTML" />
-                <element signature="e#7196#7203#1#HTML" expanded="true" />
+                <element signature="e#55#62#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update_user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/update_user.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/frontdesk/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="115">
+              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/doctor/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_info.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/user_info.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/delete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -103,6 +138,8 @@
       <find>.hk-pg-wrapper</find>
       <find>.hk-wrapper.hk-vertical-nav .hk-nav .navbar-nav .nav-item .nav-link[data-toggle=&quot;collapse&quot;]::after</find>
       <find>favicon</find>
+      <find>exampleModalLarge01</find>
+      <find>log</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\hmis\include\dist</dir>
@@ -122,14 +159,25 @@
         <option value="$PROJECT_DIR$/signup.php" />
         <option value="$PROJECT_DIR$/include/class/dbconfig.php" />
         <option value="$PROJECT_DIR$/include/footer.php" />
-        <option value="$PROJECT_DIR$/dashboard/logout.php" />
         <option value="$PROJECT_DIR$/include/dist/css/style.css" />
         <option value="$PROJECT_DIR$/dashboard/add_user.php" />
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/dashboard/include/dashboard_layout.php" />
-        <option value="$PROJECT_DIR$/dashboard/update_user.php" />
         <option value="$PROJECT_DIR$/include/header.php" />
+        <option value="$PROJECT_DIR$/dashboard/update_user.php" />
         <option value="$PROJECT_DIR$/dashboard/index.php" />
+        <option value="$PROJECT_DIR$/dashboard/delete.php" />
+        <option value="$PROJECT_DIR$/dashboard/nurse/index.php" />
+        <option value="$PROJECT_DIR$/dashboard/patient/index.php" />
+        <option value="$PROJECT_DIR$/dashboard/pharmacist/index.php" />
+        <option value="$PROJECT_DIR$/dashboard/doctor/index.php" />
+        <option value="$PROJECT_DIR$/dashboard/logout.php" />
+        <option value="$PROJECT_DIR$/dashboard/include/dashboard_layout.php" />
+        <option value="$PROJECT_DIR$/dashboard/admin/index.php" />
+        <option value="$PROJECT_DIR$/dashboard/admin/user_info.php" />
+        <option value="$PROJECT_DIR$/dashboard/admin/delete.php" />
+        <option value="$PROJECT_DIR$/dashboard/admin/add_user.php" />
+        <option value="$PROJECT_DIR$/dashboard/frontdesk/index.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/dashboard/admin/update_user.php" />
       </list>
     </option>
   </component>
@@ -171,26 +219,31 @@
             <path>
               <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
               <item name="hmis" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmis" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="doctor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmis" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="frontdesk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmis" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
               <item name="hmis" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="class" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmis" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmis" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
@@ -209,6 +262,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\hmis\dashboard" />
+      <recent name="D:\xampp\htdocs\hmis\dashboard\admin" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -233,12 +292,12 @@
       <option name="presentableId" value="Default" />
       <updated>1664410862217</updated>
       <workItem from="1664410864466" duration="7819000" />
-      <workItem from="1664474387602" duration="40485000" />
+      <workItem from="1664474387602" duration="65115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48304000" />
+    <option name="totallyTimeSpent" value="72934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="96" y="0" width="1400" height="733" extended-state="0" />
@@ -329,13 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/class/dbconfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -350,53 +402,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/dashboard/nurse/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="69">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/add_user.php">
+    <entry file="file://$PROJECT_DIR$/dashboard/patient/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="78" column="69" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
+        <state relative-caret-position="69">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/pharmacist/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="276">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/update_user.php">
+    <entry file="file://$PROJECT_DIR$/dashboard/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/include/dashboard_layout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        <state relative-caret-position="368">
+          <caret line="70" column="54" lean-forward="true" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
           <folding>
             <element signature="n#div#1;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/index.php">
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/add_user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
-          <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
+          <caret line="92" column="15" selection-start-line="92" selection-start-column="15" selection-end-line="92" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/user_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/frontdesk/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/doctor/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1132">
+          <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
           <folding>
-            <element signature="e#2830#5031#0#HTML" />
-            <element signature="e#6703#10776#0#HTML" />
-            <element signature="e#7196#7203#1#HTML" expanded="true" />
+            <element signature="e#55#62#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/update_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
