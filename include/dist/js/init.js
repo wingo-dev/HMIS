@@ -423,7 +423,7 @@ var chatApp = function() {
 			$('<li class="media sent"><div class="media-body"><div class="msg-box"><div><p>' + $(this).val() + '</p><span class="chat-time">8:00 pm</span><div class="arrow-triangle-wrap"><div class="arrow-triangle left"></div></div></div></div></div></li>').insertAfter(".chatapp-right  ul li.media:last-child");
 			$(this).val('');
 		} else if(e.which == 13) {
-			alert('Please type asomthing!');
+			('Please type asomthing!');
 		}
 		return;
 	});

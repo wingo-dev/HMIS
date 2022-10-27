@@ -2,7 +2,7 @@
 include "../../include/header.php";
 
 if (!isset($_SESSION['user_info'])){
-    header("location:../../login.php");
+    header("location:../index.php");
 }
 ?>
 <!-- HK Wrapper -->
@@ -77,7 +77,7 @@ if (!isset($_SESSION['user_info'])){
 //                    doctor part
                     if ($_SESSION['user_info']['role'] == 1){?>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="index.php">
                                 <i class="ion ion-ios-keypad"></i>
                                 <span class="nav-link-text">Add Diagnosis Report</span>
                             </a>
@@ -87,13 +87,13 @@ if (!isset($_SESSION['user_info'])){
                     if ($_SESSION['user_info']['role'] == 2){
                     ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="index.php">
                                 <i class="ion ion-ios-keypad"></i>
                                 <span class="nav-link-text">Assign Bed</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="add_appointment.php">
                                 <i class="ion ion-ios-keypad"></i>
                                 <span class="nav-link-text">Add Appointment</span>
                             </a>
@@ -103,7 +103,7 @@ if (!isset($_SESSION['user_info'])){
                     if ($_SESSION['user_info']['role'] == 3){
                     ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="index.php">
                                 <i class="ion ion-ios-keypad"></i>
                                 <span class="nav-link-text">Prescription</span>
                             </a>

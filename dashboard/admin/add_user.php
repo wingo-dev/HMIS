@@ -5,7 +5,6 @@ if (isset($_POST['register'])){
         echo  "All fields are required";
     }else{
         $check_email = mysqli_query($conn->connect(), "SELECT *FROM users WHERE email='".$_POST['email']."'");
-        var_dump($check_email);
         if (mysqli_num_rows($check_email) > 0){
             $_SESSION['exist_email'] = $_POST['email']." already exist.";
             header("location:add_user.php");

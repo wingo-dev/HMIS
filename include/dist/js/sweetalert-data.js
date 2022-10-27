@@ -1,12 +1,12 @@
-/*SweetAlert Init*/
+/*Sweet Init*/
 
 $(function() {
 	"use strict";
 	
-	var SweetAlert = function() {};
+	var Sweet = function() {};
 
     //examples 
-    SweetAlert.prototype.init = function() {
+    Sweet.prototype.init = function() {
         
     //Basic
     $('#sa-basic').on('click',function(e){
@@ -91,7 +91,7 @@ $(function() {
     //Auto Close Timer
 	$('#sa-close').on('click',function(e){
         swal({   
-            title: "Auto close alert!",   
+            title: "Auto close !",
             text: "I will close in 2 seconds.",   
             timer: 2000,   
             showConfirmButton: false 
@@ -102,7 +102,7 @@ $(function() {
 
     },
     //init
-    $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert;
+    $.Sweet = new Sweet, $.Sweet.Constructor = Sweet;
 	
-	$.SweetAlert.init();
+	$.Sweet.init();
 });

@@ -2,7 +2,7 @@
  
 "use strict"; 
 $(document).ready(function() {
-	/*Toaster Alert*/
+	/*Toaster */
 	$.toast({
 		heading: 'Oh snap!',
 		text: '<p>Change a few things and try submitting again.</p>',

@@ -2,7 +2,7 @@
  
 "use strict"; 
 $(document).ready(function() {
-	/*Toaster Alert*/
+	/*Toaster */
 	$.toast({
 		heading: 'Well done!',
 		text: '<p>You have successfully completed level 1.</p><button class="btn btn-primary btn-sm mt-10">Play again</button>',

@@ -249,7 +249,7 @@ window.onload = function () {
           cropper.reset().replace(blobURL);
           inputImage.value = null;
         } else {
-          window.alert('Please choose an image file.');
+          window.('Please choose an image file.');
         }
       }
     };

@@ -35,7 +35,7 @@ $(document).ready(function() {
 		$("body").removeAttr('class');
 		$.toast({
             heading: 'Are you sure you want to delete this file?',
-			text: '<i class="jq-toast-icon ti-alert"></i><button class="btn btn-secondary btn-sm mt-10 mr-5">yes</button><button class="btn btn-primary btn-sm mt-10">cancel</button>',
+			text: '<i class="jq-toast-icon ti-"></i><button class="btn btn-secondary btn-sm mt-10 mr-5">yes</button><button class="btn btn-primary btn-sm mt-10">cancel</button>',
 			position: 'top-right',
 			loaderBg:'#f68daf',
 			class: 'jq-has-icon jq-toast-warning',

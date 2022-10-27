@@ -24,6 +24,8 @@
     <!-- Toggles CSS -->
     <link href="<?php echo RELATIVE_PATH.'/vendors/jquery-toggles/css/toggles.css'?>" rel="stylesheet" type="text/css">
     <link href="<?php echo RELATIVE_PATH.'/vendors/jquery-toggles/css/themes/toggles-light.css'?>" rel="stylesheet" type="text/css">
+    <!-- Daterangepicker CSS -->
+    <link href="<?php echo RELATIVE_PATH.'/vendors/daterangepicker/daterangepicker.css'?>" rel="stylesheet" type="text/css" />
 
     <!-- Custom CSS -->
     <link href="<?php echo RELATIVE_PATH.'/dist/css/style.css'?>" rel="stylesheet" type="text/css">

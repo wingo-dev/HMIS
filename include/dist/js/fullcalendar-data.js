@@ -29,7 +29,7 @@ $(document).ready(function() {
     });
     };
     $(document).on('click','#add_event',function(e) {
-		$('<div class="calendar-event alert alert-'+$( "#event_priority" ).val()+' alert-dismissible fade show"><p>' + $('#inputEvent').val() + '</p><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>').insertAfter(".calendar-event:last-child").draggable();
+		$('<div class="calendar-event  -'+$( "#event_priority" ).val()+' -dismissible fade show"><p>' + $('#inputEvent').val() + '</p><button type="button" class="close" data-dismiss="" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>').insertAfter(".calendar-event:last-child").draggable();
 		$(this).parents('.modal').find('.close').trigger('click');
 		drag();
 		return false;
@@ -130,7 +130,7 @@ $(document).ready(function() {
             }
 		],
 		drop: function() {
-			//alert($(this).css('background-color'));
+			//($(this).css('background-color'));
 			if($("#remove_event").is(':checked'))
 				$(this).remove();
 		}
