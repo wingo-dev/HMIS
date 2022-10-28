@@ -1,14 +1,14 @@
 <?php
-include "../include/dashboard_layout.php";
-$prescription_query = "SELECT * FROM prescription";
-$prescription = mysqli_query($conn->connect(), $prescription_query);
+require "../include/dashboard_layout.php";
+$appoint_query = "SELECT * FROM appointment";
+$appoints = mysqli_query($conn->connect(), $appoint_query);
 ?>
     <div class="hk-pg-wrapper">
         <!-- Breadcrumb -->
         <nav class="hk-breadcrumb" aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-light bg-transparent">
-                <li class="breadcrumb-item"><a href="#">Nurse</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Prescription</li>
+                <li class="breadcrumb-item"><a href="#">Front Desk</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Appoint Lists</li>
             </ol>
         </nav>
         <!-- /Breadcrumb -->
@@ -23,27 +23,23 @@ $prescription = mysqli_query($conn->connect(), $prescription_query);
                                     <tr>
                                         <th>NO</th>
                                         <th>Patient</th>
-                                        <th>Prescription Type</th>
-                                        <th>Treatment</th>
-                                        <th>History</th>
-                                        <th>Medication</th>
-                                        <th>Note</th>
-<!--                                        <th>Action</th>-->
+                                        <th>Appoint Date</th>
+                                        <th>Appoint Time</th>
+                                        <th>Description</th>
+                                        <th>Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <?php if (mysqli_num_rows($prescription)>0) {
+                                    <?php if (mysqli_num_rows($appoints)>0) {
                                         $no = 0;
-                                        while($row = mysqli_fetch_array($prescription)){?>
+                                        while($row = mysqli_fetch_array($appoints)){?>
                                             <tr>
                                                 <th scope="row"><?php echo $no;?></th>
                                                 <td><?php echo $row['patient'];?></td>
-                                                <td><?php echo $row['pre_type'];?></td>
-                                                <td><?php echo $row['treatment'];?></td>
-                                                <td><?php echo $row['history'];?></td>
-                                                <td><?php echo $row['medication'];?></td>
-                                                <td><?php echo $row['pre_note'];?></td>
-<!--                                                <td><a href="delete.php?id=--><?php //echo $row['id']?><!--"><span class="badge badge-danger">delete</span></a></td>-->
+                                                <td><?php echo $row['appoint_date'];?></td>
+                                                <td><?php echo $row['appoint_time'];?></td>
+                                                <td><?php echo $row['description'];?></td>
+                                                <td><a href="delete.php?appoint_id=<?php echo $row['id']?>"><span class="badge badge-danger">delete</span></a></td>
                                             </tr>
                                             <?php $no++;}}?>
                                     </tbody>

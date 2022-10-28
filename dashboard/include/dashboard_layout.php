@@ -79,6 +79,10 @@ if (!isset($_SESSION['user_info'])){
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">
                                 <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Diagnosis Report</span>
+                            </a>
+                            <a class="nav-link" href="add_diagnosis.php">
+                                <i class="ion ion-ios-keypad"></i>
                                 <span class="nav-link-text">Add Diagnosis Report</span>
                             </a>
                         </li>
@@ -93,9 +97,21 @@ if (!isset($_SESSION['user_info'])){
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="add_appointment.php">
+                            <a class="nav-link" href="register_patient.php">
                                 <i class="ion ion-ios-keypad"></i>
-                                <span class="nav-link-text">Add Appointment</span>
+                                <span class="nav-link-text">Register Patient</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="appointment.php">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Appointment Lists</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bed.php">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Bed Lists</span>
                             </a>
                         </li>
                     <?php }
@@ -105,7 +121,11 @@ if (!isset($_SESSION['user_info'])){
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">
                                 <i class="ion ion-ios-keypad"></i>
-                                <span class="nav-link-text">Prescription</span>
+                                <span class="nav-link-text">Prescription Views</span>
+                            </a>
+                            <a class="nav-link" href="prescription.php">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Add Prescription</span>
                             </a>
                         </li>
                     <?php }
@@ -123,13 +143,7 @@ if (!isset($_SESSION['user_info'])){
                     if ($_SESSION['user_info']['role'] == 5){
                     ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="ion ion-ios-keypad"></i>
-                                <span class="nav-link-text">Register Patient</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="index.php">
                                 <i class="ion ion-ios-keypad"></i>
                                 <span class="nav-link-text">Add Appointment</span>
                             </a>
