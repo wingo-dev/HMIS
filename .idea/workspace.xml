@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f05dba6-d4c2-4430-a390-50061cdd71ee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dashboard/doctor/add_diagnosis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/doctor/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/frontdesk/appointment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/frontdesk/bed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/frontdesk/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/frontdesk/register_patient.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/nurse/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/nurse/prescription.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/pharmacist/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin/add_report_type.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin/report_delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/doctor/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/doctor/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/frontdesk/add_appointment.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/include/dashboard_layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/include/dashboard_layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/nurse/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/nurse/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/patient/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/patient/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/pharmacist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/pharmacist/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,35 +20,51 @@
       <file leaf-file-name="dashboard_layout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/include/dashboard_layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="145" column="63" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
+            <state relative-caret-position="345">
+              <caret line="78" column="72" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bed.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/frontdesk/bed.php">
+      <file leaf-file-name="add_report_type.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/add_report_type.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="438">
+              <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dashboard/doctor/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appointment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard/frontdesk/appointment.php">
+      <file leaf-file-name="report_delete.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/report_delete.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/delete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" selection-end-line="5" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="98" column="33" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="98" selection-end-column="34" />
+              <folding>
+                <element signature="e#1146#6607#0#HTML" />
+                <element signature="e#55#62#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,8 +142,11 @@
         <option value="$PROJECT_DIR$/dashboard/frontdesk/add_appointment.php" />
         <option value="$PROJECT_DIR$/dashboard/patient/index.php" />
         <option value="$PROJECT_DIR$/dashboard/frontdesk/appointment.php" />
-        <option value="$PROJECT_DIR$/dashboard/include/dashboard_layout.php" />
         <option value="$PROJECT_DIR$/dashboard/doctor/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/dashboard/include/dashboard_layout.php" />
+        <option value="$PROJECT_DIR$/dashboard/admin/add_report_type.php" />
+        <option value="$PROJECT_DIR$/dashboard/admin/report_delete.php" />
       </list>
     </option>
   </component>
@@ -165,7 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,31 +195,12 @@
               <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
               <item name="hmis" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="doctor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmis" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="frontdesk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmis" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
               <item name="hmis" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="nurse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hmis" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="patient" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hmis" type="b2602c69:ProjectViewProjectNode" />
@@ -222,6 +210,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,18 +258,19 @@
       <workItem from="1665628830687" duration="1353000" />
       <workItem from="1666049585518" duration="13764000" />
       <workItem from="1666652845900" duration="16093000" />
-      <workItem from="1666877621928" duration="16629000" />
+      <workItem from="1666877621928" duration="17223000" />
+      <workItem from="1667261802183" duration="4565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140398000" />
+    <option name="totallyTimeSpent" value="145557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="0" width="1540" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18513514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18783784" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -307,21 +297,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/include/dashboard_layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -449,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -474,34 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/admin/add_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/admin/user_info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="86" column="111" selection-start-line="86" selection-start-column="73" selection-end-line="86" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/admin/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -561,9 +507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/frontdesk/add_appointment.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/frontdesk/add_appointment.php" />
     <entry file="file://$PROJECT_DIR$/dashboard/patient/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -599,17 +543,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/include/dashboard_layout.php">
+    <entry file="file://$PROJECT_DIR$/dashboard/doctor/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="145" column="63" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
+        <state relative-caret-position="299">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/doctor/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        <state relative-caret-position="207">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/include/dashboard_layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="78" column="72" selection-start-line="78" selection-start-column="72" selection-end-line="78" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/user_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/add_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="98" column="33" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="98" selection-end-column="34" />
+          <folding>
+            <element signature="e#1146#6607#0#HTML" />
+            <element signature="e#55#62#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/add_report_type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/admin/report_delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>

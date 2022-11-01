@@ -95,9 +95,6 @@ if(isset($_POST['email'])){
                                         <label class="custom-control-label font-14" for="same-address">Keep me logged in</label>
                                     </div>
                                     <button class="btn btn-warning btn-block" type="submit">Login</button>
-                                    <p class="font-14 text-center mt-15">Having trouble logging in?</p>
-                                    <div class="option-sep">or</div>
-                                    <p class="text-center">Do have an account yet? <a href="">Sign Up</a></p>
                                 </form>
                             </div>
                         </div>

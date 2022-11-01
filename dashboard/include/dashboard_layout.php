@@ -73,6 +73,12 @@ if (!isset($_SESSION['user_info'])){
                                 <span class="nav-link-text">Register User</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="add_report_type.php">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Add Report Type</span>
+                            </a>
+                        </li>
                     <?php }
 //                    doctor part
                     if ($_SESSION['user_info']['role'] == 1){?>
