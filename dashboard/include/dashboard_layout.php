@@ -1,8 +1,7 @@
 <?php
 include "../../include/header.php";
-
-if (!isset($_SESSION['user_info'])){
-    header("location:../index.php");
+if (!isset($_SESSION['user_info']['role'])){
+    echo("<script>location.href = '../../index.php';</script>");
 }
 ?>
 <!-- HK Wrapper -->
@@ -91,6 +90,14 @@ if (!isset($_SESSION['user_info'])){
                                 <i class="ion ion-ios-keypad"></i>
                                 <span class="nav-link-text">Add Diagnosis Report</span>
                             </a>
+                            <a class="nav-link" href="view_prescription.php">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">View Prescription</span>
+                            </a>
+                            <a class="nav-link" href="add_prescription.php">
+                                <i class="ion ion-ios-keypad"></i>
+                                <span class="nav-link-text">Add Prescription</span>
+                            </a>
                         </li>
                     <?php }
 //                    front desk
@@ -127,11 +134,11 @@ if (!isset($_SESSION['user_info'])){
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">
                                 <i class="ion ion-ios-keypad"></i>
-                                <span class="nav-link-text">Prescription Views</span>
+                                <span class="nav-link-text">Pending Prescription</span>
                             </a>
-                            <a class="nav-link" href="prescription.php">
+                            <a class="nav-link" href="confirmed.php">
                                 <i class="ion ion-ios-keypad"></i>
-                                <span class="nav-link-text">Add Prescription</span>
+                                <span class="nav-link-text">Confirmed Prescription</span>
                             </a>
                         </li>
                     <?php }

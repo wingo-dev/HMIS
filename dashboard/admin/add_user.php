@@ -1,5 +1,9 @@
 <?php
 include "../include/dashboard_layout.php";
+if ($_SESSION['user_info']['role'] != 0){
+    header("location:../../index.php");
+    echo("<script>location.href = '../../index.php';</script>");
+}
 if (isset($_POST['register'])){
     if (empty($_POST["username"]) && empty($_POST['email'])){
         echo  "All fields are required";

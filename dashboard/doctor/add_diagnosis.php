@@ -1,9 +1,16 @@
 <?php
 require "../include/dashboard_layout.php";
+if ($_SESSION['user_info']['role'] != 1){
+    header("location:../../index.php");
+    echo("<script>location.href = '../../index.php';</script>");
+}
 $patient_query = "SELECT * FROM patients";
 $patients = mysqli_query($conn->connect(), $patient_query);
+
+$report_query = "Select * From report_type";
+$report_type = mysqli_query($conn->connect(), $report_query);
 if (isset($_POST['diagnosis'])){
-    $query = "INSERT INTO diagnosis (patient, rep_type, rep_cost, diagnosis_desc) VALUES('".$_POST['patient']."','".$_POST['report_type']."', '".$_POST['report_cost']."', '".$_POST['description']."')";
+    $query = "INSERT INTO diagnosis (rep_type, rep_cost, diagnosis_desc, patient_id) VALUES('".$_POST['report_type']."', '".$_POST['report_cost']."', '".$_POST['description']."', '".$_POST['patient']."')";
     mysqli_query($conn->connect(), $query);
 
     echo("<script>location.href = './index.php';</script>");
@@ -30,7 +37,7 @@ if (isset($_POST['diagnosis'])){
                                         <option >Select Patient</option>
                                         <?php if (mysqli_num_rows($patients)>0) {
                                             while($row = mysqli_fetch_array($patients)){?>
-                                                <option value="<?php echo $row['first_name'];?>"><?php echo $row['first_name'];?></option>
+                                                <option value="<?php echo $row['id'];?>"><?php echo $row['first_name'];?></option>
                                             <?php }
                                         }?>
                                     </select>
@@ -39,9 +46,11 @@ if (isset($_POST['diagnosis'])){
                                     <label class="control-label mb-10" for="exampleInputEmail_1">Report Type</label>
                                     <select class="form-control custom-select" name="report_type" required>
                                         <option >Select Report Type</option>
-                                        <option value="type1">Type1</option>
-                                        <option value="type2">Type2</option>
-                                        <option value="type3">Type3</option>
+                                        <?php if (mysqli_num_rows($report_type)>0) {
+                                            while($row = mysqli_fetch_array($report_type)){?>
+                                                <option value="<?php echo $row['report'];?>"><?php echo $row['report'];?></option>
+                                            <?php }
+                                        }?>
                                     </select>
                                 </div>
                             </div>
@@ -53,7 +62,7 @@ if (isset($_POST['diagnosis'])){
                             </div>
                             <div class="row form-group">
                                 <div class="col-12">
-                                    <textarea class="form-control mt-15" name="description" rows="3" placeholder="Description" required></textarea>
+                                    <textarea class="form-control mt-15" name="description" rows="3" placeholder="Prescription" required></textarea>
                                 </div>
                             </div>
                             <button type="submit" name="diagnosis" value="diagnosis" class="btn btn-primary mr-10">Save</button>

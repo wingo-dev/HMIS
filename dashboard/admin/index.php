@@ -1,5 +1,9 @@
 <?php
 include "../include/dashboard_layout.php";
+if ($_SESSION['user_info']['role'] != 0){
+    header("location:../../index.php");
+    echo("<script>location.href = '../../index.php';</script>");
+}
 $query = "SELECT * FROM users";
 $result = mysqli_query($conn->connect(), $query);
 ?>

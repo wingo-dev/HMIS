@@ -1,5 +1,9 @@
 <?php
 require "../include/dashboard_layout.php";
+if ($_SESSION['user_info']['role'] != 2){
+    header("location:../../index.php");
+    echo("<script>location.href = '../../index.php';</script>");
+}
 $appoint_query = "SELECT * FROM appointment";
 $appoints = mysqli_query($conn->connect(), $appoint_query);
 ?>

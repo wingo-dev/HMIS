@@ -1,18 +1,19 @@
 <?php
 include "../include/dashboard_layout.php";
-if ($_SESSION['user_info']['role'] != 4){
+if ($_SESSION['user_info']['role'] != 3){
     header("location:../../index.php");
     echo("<script>location.href = '../../index.php';</script>");
 }
 $prescription_query = "SELECT * FROM prescription";
-$prescription = mysqli_query($conn->connect(), $prescription_query);
+$prescriptions = mysqli_query($conn->connect(), $prescription_query);
+
 ?>
     <div class="hk-pg-wrapper">
         <!-- Breadcrumb -->
         <nav class="hk-breadcrumb" aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-light bg-transparent">
                 <li class="breadcrumb-item"><a href="#">Nurse</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Prescription</li>
+                <li class="breadcrumb-item active" aria-current="page">Pending Prescription</li>
             </ol>
         </nav>
         <!-- /Breadcrumb -->
@@ -32,24 +33,20 @@ $prescription = mysqli_query($conn->connect(), $prescription_query);
                                         <th>History</th>
                                         <th>Medication</th>
                                         <th>Note</th>
-<!--                                        <th>Action</th>-->
+                                        <th>Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <?php if (mysqli_num_rows($prescription)>0) {
-                                        $no = 0;
-                                        while($row = mysqli_fetch_array($prescription)){?>
-                                            <tr>
-                                                <th scope="row"><?php echo $no;?></th>
-                                                <td><?php echo $row['patient'];?></td>
-                                                <td><?php echo $row['pre_type'];?></td>
-                                                <td><?php echo $row['treatment'];?></td>
-                                                <td><?php echo $row['history'];?></td>
-                                                <td><?php echo $row['medication'];?></td>
-                                                <td><?php echo $row['pre_note'];?></td>
-<!--                                                <td><a href="delete.php?id=--><?php //echo $row['id']?><!--"><span class="badge badge-danger">delete</span></a></td>-->
-                                            </tr>
-                                            <?php $no++;}}?>
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href=""><span class="badge badge-info">Confirmed</span></a></td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>

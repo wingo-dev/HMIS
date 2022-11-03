@@ -1,5 +1,9 @@
 <?php
 include_once '../../include/class/dbconfig.php';
+if ($_SESSION['user_info']['role'] != 2){
+    header("location:../../index.php");
+    echo("<script>location.href = '../../index.php';</script>");
+}
 $conn = new DbConfig();
 
 if(isset($_GET['appoint_id'])){

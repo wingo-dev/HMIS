@@ -1,7 +1,12 @@
 <?php
 require "../include/dashboard_layout.php";
-$diagnosis_query = "SELECT * FROM diagnosis";
+if ($_SESSION['user_info']['role'] != 1){
+    header("location:../../index.php");
+    echo("<script>location.href = '../../index.php';</script>");
+}
+$diagnosis_query = "SELECT * FROM diagnosis left join patients on patients.id = diagnosis.patient_id";
 $patients = mysqli_query($conn->connect(), $diagnosis_query);
+//var_dump(json_encode(mysqli_fetch_array($patients)));
 ?>
     <div class="hk-pg-wrapper">
         <!-- Breadcrumb -->
@@ -37,7 +42,7 @@ $patients = mysqli_query($conn->connect(), $diagnosis_query);
                                                 while($row = mysqli_fetch_array($patients)){?>
                                                 <tr>
                                                     <th scope="row"><?php echo $no;?></th>
-                                                    <td><?php echo $row['patient'];?></td>
+                                                    <td><a href="./patient_detail.php?patient=<?php echo $row['patient_id']?>"><?php echo $row['first_name'];?></a></td>
                                                     <td><?php echo $row['rep_type'];?></td>
                                                     <td><?php echo $row['rep_cost'];?></td>
                                                     <td><?php echo $row['diagnosis_desc'];?></td>

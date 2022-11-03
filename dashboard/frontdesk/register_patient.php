@@ -1,6 +1,9 @@
 <?php
 include "../include/dashboard_layout.php";
-
+if ($_SESSION['user_info']['role'] != 2){
+    header("location:../../index.php");
+    echo("<script>location.href = '../../index.php';</script>");
+}
 if (isset($_POST['patient']) && $_POST['patient'] == 'patient'){
     $query = "INSERT INTO patients (reg_no, first_name, middle_name, last_name, gender, birthday, blood, address, city, state, country, mobile, email) 
               VALUES('".$_POST['reg_no']."','".$_POST['first_name']."', '".$_POST['middle_name']."', '".$_POST['last_name']."', 

@@ -1,5 +1,9 @@
 <?php
 include "../include/dashboard_layout.php";
+if ($_SESSION['user_info']['role'] != 5){
+    header("location:../../index.php");
+    echo("<script>location.href = '../../index.php';</script>");
+}
 $patient_query = "SELECT * FROM patients";
 $patients = mysqli_query($conn->connect(), $patient_query);
 if (isset($_POST['create_time'])){
